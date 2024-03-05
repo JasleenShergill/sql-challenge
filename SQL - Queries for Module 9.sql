@@ -34,7 +34,7 @@ SELECT d.dept_no AS "Department No.", d.emp_no AS "Employee No.",
 		e.last_name AS "Last Name" , e.first_name As "First Name",
 		de.dept_name AS "Department Name"
 FROM employees AS e
-JOIN dept_manager AS d
+JOIN dept_emp AS d
 ON d.emp_no = e.emp_no
 JOIN departments AS de
 ON d.dept_no = de.dept_no
