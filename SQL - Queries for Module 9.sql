@@ -56,7 +56,7 @@ FROM employees
 WHERE emp_no IN
 (
 	SELECT emp_no
-	FROM dept_manager 
+	FROM dept_emp
 	WHERE dept_no IN
 	(
 		SELECT dept_no
