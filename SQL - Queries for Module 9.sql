@@ -51,19 +51,15 @@ WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
 -- List each employee in the Sales department, including their employee number,
 --last name, and first name (2 points)
 
-SELECT emp_no AS "Employer Number",last_name AS "Last Name", first_name AS "First Name"
-FROM employees 
-WHERE emp_no IN
-(
-	SELECT emp_no
-	FROM dept_emp
-	WHERE dept_no IN
-	(
-		SELECT dept_no
-		FROM departments 
-		WHERE dept_name = 'Sales'
-	)
-);
+SELECT e.emp_no, e.last_name
+    	 e.first_name
+FROM employees AS e
+INNER JOIN dept_emp AS de
+ON e.emp_no = de.emp_no
+INNER JOIN departments AS d
+ON d.dept_no = de.dept_no
+WHERE d.dept_name = 'Sales';
+
 
 -- List each employee in the Sales and Development departments, including their employee number,
 --last name, first name, and department name (4 points)
