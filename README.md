@@ -1,21 +1,33 @@
-# sql-challenge
+#Pewlett Hackard Employee Database Analysis 📊🔍📋
 
-Using PostgresSQL perform an analysis-
+**Project Overview**
+Welcome to the Pewlett Hackard Employee Database Analysis project! As a new data engineer at Pewlett Hackard, your task is to dive into the employee database from the 1980s and 1990s, design tables, import CSV files, and answer key questions about the data.
 
-Analysis Questions- 
+**Project Goals 🎯**
 
-List the employee number, last name, first name, sex, and salary of each employee.
+-Design tables to hold data from six CSV files
+-Import CSV files into a SQL database
+-Perform data modeling, data engineering, and data analysis
+-Answer specific questions about the employee data  
 
-List the first name, last name, and hire date for the employees who were hired in 1986.
+**Dataset Reference 📌**
+The dataset used in this project is provided by Pewlett Hackard and contains information about employees during the 1980s and 1990s.
 
-List the manager of each department along with their department number, department name, employee number, last name, and first name.
+**Project Structure 🏗️**
 
-List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+**data_modeling.sql:** Contains table schemas and the entity relationship diagram.  
+**data_engineering.sql:** Imports CSV files into corresponding SQL tables.  
+**data_analysis.sql:** Contains SQL queries to answer specific questions about the data.  
+**README.md:** Provides an overview of the project, goals, dataset reference, and project structure.  
 
-List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+**Instructions 📝**
 
-List each employee in the Sales department, including their employee number, last name, and first name.
+Review the CSV files and sketch an entity relationship diagram.
+Create table schemas for each CSV file in data_modeling.sql.
+Import CSV files into SQL tables using data_engineering.sql.
+Answer questions about the data using SQL queries in data_analysis.sql.
 
-List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+**Get Started 🚀**
+Clone this repository to your local machine and follow the instructions in each SQL file to complete the data modeling, engineering, and analysis tasks.
 
-List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+**Happy analyzing! 😊📈**
