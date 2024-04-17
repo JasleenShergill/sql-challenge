@@ -1,4 +1,4 @@
-#Pewlett Hackard Employee Database Analysis 📊🔍📋
+# Pewlett Hackard Employee Database Analysis 📊🔍📋
 
 **Project Overview**
 Welcome to the Pewlett Hackard Employee Database Analysis project! As a new data engineer at Pewlett Hackard, your task is to dive into the employee database from the 1980s and 1990s, design tables, import CSV files, and answer key questions about the data.
